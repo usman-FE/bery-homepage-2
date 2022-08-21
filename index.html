@@ -2371,550 +2371,6 @@
       <!-- ADVANCE TABULAR COMPONENT END -->
     </section>
     <!-- HERO & ADVANCE TABULAR COMPONENT CONTAINER END -->
-    <!-- RELIABLE PARTNERS SECTION START -->
-    <section class="pt-[80px] lg:pt-[120px]">
-      <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
-        <!-- SECTION TITLE -->
-        <div class="mb-[60px] text-start">
-          <span class="text-[#b39359] text-[16px] inline-block mb-2">Our Partner’s</span>
-          <h2 class="font-['Lora'] text-[#0b2c3d] text-[24px] sm:text-[30px] xl:text-[36px] capitalize font-medium">
-            Reliable Partner’s<span class="text-[#b39359]">.</span>
-          </h2>
-        </div>
-        <!-- PARTNERS SLIDER CONTAINER -->
-        <div class="max-w-[1200px] mx-auto" x-data="{
-              isDown : false,
-              startX: '',
-              scrollLeft: '',
-              x: '',
-              dist: '',
-              slider: document.querySelector('.items'),
-            }">
-          <!-- SLIDER WRAPPER -->
-          <ul class="relative w-full flex cursor-pointer items overflow-hidden" @mousedown.passive="
-                isDown = true;
-                startX = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
-                scrollLeft = slider.scrollLeft;
-              " @touchstart.passive="
-                isDown = true;
-                startX = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
-                scrollLeft = slider.scrollLeft;	
-              " @mousemove.prevent="
-                if(!isDown) return;
-                x = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
-                dist = (x - startX);
-                slider.scrollLeft = scrollLeft - dist;
-              " @touchmove.prevent="
-                if(!isDown) return;
-                x = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
-                dist = (x - startX);
-                slider.scrollLeft = scrollLeft - dist;
-              " @mouseleave.passive="isDown = false" @mouseup.passive="isDown = false"
-            @touchend.passive="isDown = false">
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand1.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 1" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand2.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 2" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand3.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 3" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand4.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 4" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand5.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 5" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand1.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 1" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand2.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 2" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand3.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 3" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand4.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 4" />
-              </a>
-            </li>
-            <!-- SLIDE -->
-            <li class="w-[210px] mr-[30px] text-center shrink-0">
-              <a href="#" class="block pointer-events-none">
-                <img src="images/brand5.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
-                  height="109" alt="Brand 5" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- RELIABLE PARTNERS SECTION END -->
-    <!-- EXPLORE CITIES SECTION START -->
-    <section class="pt-[80px] pb-[120px] lg:py-[120px]">
-      <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
-        <!-- SECTION HEADING -->
-        <div class="mb-[30px] lg:mb-[60px] text-center">
-          <span class="text-[#b39359] text-[16px] inline-block mb-2">Explore Cities</span>
-          <h2 class="font-['Lora'] text-[#0b2c3d] text-[24px] sm:text-[30px] xl:text-[36px] capitalize font-medium">
-            Find Your Neighborhood
-            <span class="text-[#b39359]">.</span>
-          </h2>
-        </div>
-        <!-- EXPLORE CITIES SLIDER CONTAINER -->
-        <div class="-my-[60px] py-[60px]">
-          <!-- SLIDER'S WRAPPER -->
-          <!-- SECTION CONTENT -->
-          <div class="overflow-hidden max-w-[1200px] mx-auto" x-data="{
-                      init(){
-                               this.width <= 768 ? this.numberOfSlides = 1 :
-                               this.width > 768 && this.width <= 1024 ? this.numberOfSlides = 2 :
-                               this.numberOfSlides = 4;
-                               this.numberOfBullets = Math.ceil(this.numberOfitems / this.numberOfSlides);
-                              
-                               $nextTick(() => {
-                               Array.from($refs.pagination.children)[1].classList.add('bg-[#b39359]');
-                               Array.from($refs.pagination.children)[1].classList.add('border-transparent');
-                               Array.from($refs.pagination.children)[1].classList.remove('bg-white');
-                               Array.from($refs.pagination.children)[1].classList.remove('border-[#016450]');
-                              });
-                          },
-                      numberOfBullets: '',
-                      numberOfitems: Array.from(document.querySelector('.slider').children).length,
-                      width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-                      numberOfSlides: '',
-                      touchstartX: 0,
-                      touchstartY: 0,
-                      touchendX: 0,
-                      touchendY: 0,
-                      currentSlide: 0,
-                      swipperPaginationClass: function () {
-                        Array.from($refs.pagination.children).forEach(el => {
-                                el.classList.remove('bg-[#b39359]');
-                                el.classList.remove('border-transparent');
-                                el.classList.add('bg-white');
-                                el.classList.add('border-[#016450]');
-                                if (el.id.substr(2) === $refs.sliderContainer.dataset.id) {
-                                  el.classList.add('bg-[#b39359]');
-                                  el.classList.add('border-transparent');
-                                  el.classList.remove('bg-white');
-                                  el.classList.remove('border-[#016450]');
-                                }
-                          });
-                      },
-                      handleGesture: function(){
-                        if (this.touchendX < this.touchstartX) {
-                          if(this.currentSlide === this.numberOfBullets - 1) this.currentSlide = -1;
-                          this.currentSlide++;
-                          $refs.sliderContainer.dataset.id = this.currentSlide + 1;
-                          $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
-                          this.swipperPaginationClass();
-                        }
-                        if (this.touchendX > this.touchstartX) {
-                          if(this.currentSlide === 0) this.currentSlide = this.numberOfBullets;
-                          $refs.sliderContainer.dataset.id = this.currentSlide;
-                          this.currentSlide--;
-                          $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
-                          this.swipperPaginationClass();
-                        }
-                      }    
-                    }">
-            <!-- SLIDES PARENT CONTAINER -->
-            <div @mousedown.passive="
-                        touchstartY = $event.screenY;
-                        touchstartX = $event.screenX;
-                      " @touchstart.passive="
-                        touchstartX = $event.changedTouches[0].screenX;
-                        touchstartY = $event.changedTouches[0].screenY;
-                      " @mouseup.passive="
-                        touchendX = $event.screenX;
-                        touchendY = $event.screenY;
-                        handleGesture();
-                      " @touchend.passive="
-                        touchendX = $event.changedTouches[0].screenX;
-                        touchendY = $event.changedTouches[0].screenY;
-                        handleGesture();
-                      ">
-              <!-- SLIDES -->
-              <div data-id="1" class="flex slider transition-all duration-300 select-none" x-ref="sliderContainer">
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image1.webp" alt="Slide 1" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">New
-                          York</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          36 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image2.webp" alt="Slide 2" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">
-                          Sun Francisco
-                        </span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          16 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image3.webp" alt="Slide 3" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Washington
-                          D.C.</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          26 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          36 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image1.webp" alt="Slide 1" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">New
-                          York</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          36 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image2.webp" alt="Slide 2" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">
-                          Sun Francisco
-                        </span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          16 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image3.webp" alt="Slide 3" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Washington
-                          D.C.</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          26 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          36 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          36 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image1.webp" alt="Slide 1" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">New
-                          York</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          36 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image2.webp" alt="Slide 2" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">
-                          Sun Francisco
-                        </span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          16 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image3.webp" alt="Slide 3" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Washington
-                          D.C.</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          26 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-                <!-- SLIDE -->
-                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
-                  <article class="relative group cursor-pointer">
-                    <a href="#"
-                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
-                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
-                      <div
-                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
-                        <span
-                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
-                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
-                          36 Properties
-                        </p>
-                      </div>
-                    </a>
-                  </article>
-                </div>
-              </div>
-            </div>
-            <!-- SLIDE'S PAGINATION -->
-            <div class="flex justify-center items-center">
-              <div class="flex gap-x-2" x-ref="pagination">
-                <template x-for="i in numberOfBullets">
-                  <span class="w-[12px] h-[12px] rounded-full bg-white border border-[#016450] cursor-pointer"
-                    :id="$id('a')" @click="
-                              $refs.sliderContainer.style.transform = `translateX(-${(Array.from($el.parentElement.children).indexOf($el) - 1) * 100}%)`
-                              $refs.sliderContainer.dataset.id = +$el.id.substr(2);
-                              currentSlide = $refs.sliderContainer.dataset.id - 1;
-                              Array.from($el.parentElement.children).forEach(el => {
-                                el.classList.remove('bg-[#b39359]');
-                                el.classList.remove('border-transparent');
-                                el.classList.add('bg-white');
-                                el.classList.add('border-[#016450]');
-                              })
-                              
-                              $el.classList.remove('bg-white');
-                              $el.classList.remove('border-[#016450]');
-                              $el.classList.add('bg-[#b39359]');
-                              $el.classList.add('border-transparent');
-                            ">
-                  </span>
-                </template>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- EXPLORE CITIES SECTION END -->
-    <!-- ABOUT US SECTION START -->
-    <section class="lg:pt-[55px]" x-data="{
-        valueY: 0,
-        valueX: 0,
-        handleGesture: function(){
-          $refs.imageAbout.style.transform = `translate(${-this.valueX * 0.016}px, ${-this.valueY * 0.016}px)`
-        }
-      }" @mousemove="
-        valueY = $event.clientY;
-        valueX = $event.clientX;
-        handleGesture()
-      ">
-      <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
-        <div class="grid grid-cols-12 gap-6 items-center">
-          <!-- SECTION HEADING -->
-          <div class="col-span-12 lg:col-span-6">
-            <span class="text-[#b39359] text-[16px] inline-block mb-2">Why Choose us</span>
-            <h2
-              class="font-['Lora'] text-[#0b2c3d] text-[24px] sm:text-[30px] leading-[1.277] xl:text-[36px] capitalize mb-5 lg:mb-16 font-medium max-w-[500px]">
-              We Provide Latest Properties for our valuable Clients.<span class="text-[#b39359]">.</span>
-            </h2>
-            <div>
-              <img src="images/about.webp" x-ref="imageAbout" class="transition-all duration-75" loading="lazy"
-                width="729" height="663" alt="about Image" />
-            </div>
-          </div>
-          <!-- SECTION CONTENT LIST -->
-          <div class="col-span-12 lg:col-span-6 lg:pl-[70px]">
-            <p class="max-w-[448px]">
-              Huge number of propreties availabe here for buy, sell and Rent.
-              Also you find here co-living property so lots opportunity you
-              have to choose here and enjoy huge discount.
-            </p>
-
-            <div class="-mb-10 mt-12 xl:mt-[70px] 2xl:mt-[100px]">
-              <div class="flex flex-wrap mb-5 lg:mb-10">
-                <img src="images/doller.webp" class="self-start mr-5" loading="lazy" width="50" height="50"
-                  alt="about Image" />
-                <div class="flex-1">
-                  <h3 class="font-['Lora'] text-[#0b2c3d] text-[22px] xl:text-[28px] capitalize mb-2">
-                    Budget Friendly
-                  </h3>
-                  <p class="max-w-[315px]">
-                    Properties are most budget friendly so you have
-                    opportunity to find the best one
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-wrap mb-5 lg:mb-10">
-                <img src="images/location.webp" class="self-start mr-5" loading="lazy" width="50" height="50"
-                  alt="about Image" />
-                <div class="flex-1">
-                  <h3 class="font-['Lora'] text-[#0b2c3d] text-[22px] xl:text-[28px] capitalize mb-2">
-                    Prime Location
-                  </h3>
-                  <p class="max-w-[315px]">
-                    Properties are most budget friendly so you have
-                    opportunity to find the best one
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-wrap mb-5 lg:mb-10">
-                <img src="images/trusted.webp" class="self-start mr-5" loading="lazy" width="50" height="50"
-                  alt="about Image" />
-                <div class="flex-1">
-                  <h3 class="font-['Lora'] text-[#0b2c3d] text-[22px] xl:text-[28px] capitalize mb-2">
-                    Trusted by Thousand
-                  </h3>
-                  <p class="max-w-[315px]">
-                    Properties are most budget friendly so you have
-                    opportunity to find the best one
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ABOUT US SECTION END -->
     <!-- POPULAR PROPERTIES SECTION START -->
     <section class="py-[80px] lg:py-[120px]">
       <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
@@ -2932,74 +2388,74 @@
           <!-- SLIDER'S WRAPPER -->
           <!-- SECTION CONTENT -->
           <div class="overflow-hidden max-w-[1200px] mx-auto" x-data="{
-                      init(){
-                               this.width <= 768 ? this.numberOfSlides = 1 :
-                               this.width > 768 && this.width <= 1024 ? this.numberOfSlides = 2 :
-                               this.numberOfSlides = 3;
-                               this.numberOfBullets = Math.ceil(this.numberOfitems / this.numberOfSlides);
-                               $nextTick(() => {
-                               Array.from($refs.pagination.children)[1].classList.add('bg-[#b39359]');
-                               Array.from($refs.pagination.children)[1].classList.add('border-transparent');
-                               Array.from($refs.pagination.children)[1].classList.remove('bg-white');
-                               Array.from($refs.pagination.children)[1].classList.remove('border-[#016450]');
+                          init(){
+                                   this.width <= 768 ? this.numberOfSlides = 1 :
+                                   this.width > 768 && this.width <= 1024 ? this.numberOfSlides = 2 :
+                                   this.numberOfSlides = 3;
+                                   this.numberOfBullets = Math.ceil(this.numberOfitems / this.numberOfSlides);
+                                   $nextTick(() => {
+                                   Array.from($refs.pagination.children)[1].classList.add('bg-[#b39359]');
+                                   Array.from($refs.pagination.children)[1].classList.add('border-transparent');
+                                   Array.from($refs.pagination.children)[1].classList.remove('bg-white');
+                                   Array.from($refs.pagination.children)[1].classList.remove('border-[#016450]');
+                                  });
+                              },
+                          numberOfBullets: '',
+                          numberOfitems: Array.from(document.querySelector('.popularSlider').children).length,
+                          width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                          numberOfSlides: '',
+                          touchstartX: 0,
+                          touchstartY: 0,
+                          touchendX: 0,
+                          touchendY: 0,
+                          currentSlide: 0,
+                          swipperPaginationClass: function () {
+                            Array.from($refs.pagination.children).forEach(el => {
+                                    el.classList.remove('bg-[#b39359]');
+                                    el.classList.remove('border-transparent');
+                                    el.classList.add('bg-white');
+                                    el.classList.add('border-[#016450]');
+                                    if (el.id.substr(2) === $refs.sliderContainer.dataset.id) {
+                                      el.classList.add('bg-[#b39359]');
+                                      el.classList.add('border-transparent');
+                                      el.classList.remove('bg-white');
+                                      el.classList.remove('border-[#016450]');
+                                    }
                               });
                           },
-                      numberOfBullets: '',
-                      numberOfitems: Array.from(document.querySelector('.popularSlider').children).length,
-                      width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-                      numberOfSlides: '',
-                      touchstartX: 0,
-                      touchstartY: 0,
-                      touchendX: 0,
-                      touchendY: 0,
-                      currentSlide: 0,
-                      swipperPaginationClass: function () {
-                        Array.from($refs.pagination.children).forEach(el => {
-                                el.classList.remove('bg-[#b39359]');
-                                el.classList.remove('border-transparent');
-                                el.classList.add('bg-white');
-                                el.classList.add('border-[#016450]');
-                                if (el.id.substr(2) === $refs.sliderContainer.dataset.id) {
-                                  el.classList.add('bg-[#b39359]');
-                                  el.classList.add('border-transparent');
-                                  el.classList.remove('bg-white');
-                                  el.classList.remove('border-[#016450]');
-                                }
-                          });
-                      },
-                      handleGesture: function(){
-                        if (this.touchendX < this.touchstartX) {
-                          if(this.currentSlide === this.numberOfBullets - 1) this.currentSlide = -1;
-                          this.currentSlide++;
-                          $refs.sliderContainer.dataset.id = this.currentSlide + 1;
-                          $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
-                          this.swipperPaginationClass();
-                        }
-                        if (this.touchendX > this.touchstartX) {
-                          if(this.currentSlide === 0) this.currentSlide = this.numberOfBullets;
-                          $refs.sliderContainer.dataset.id = this.currentSlide;
-                          this.currentSlide--;
-                          $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
-                          this.swipperPaginationClass();
-                        }
-                      }    
-                    }">
+                          handleGesture: function(){
+                            if (this.touchendX < this.touchstartX) {
+                              if(this.currentSlide === this.numberOfBullets - 1) this.currentSlide = -1;
+                              this.currentSlide++;
+                              $refs.sliderContainer.dataset.id = this.currentSlide + 1;
+                              $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
+                              this.swipperPaginationClass();
+                            }
+                            if (this.touchendX > this.touchstartX) {
+                              if(this.currentSlide === 0) this.currentSlide = this.numberOfBullets;
+                              $refs.sliderContainer.dataset.id = this.currentSlide;
+                              this.currentSlide--;
+                              $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
+                              this.swipperPaginationClass();
+                            }
+                          }    
+                        }">
             <!-- SLIDES PARENT CONTAINER -->
             <div @mousedown.passive="
-                        touchstartY = $event.screenY;
-                        touchstartX = $event.screenX;
-                      " @touchstart.passive="
-                        touchstartX = $event.changedTouches[0].screenX;
-                        touchstartY = $event.changedTouches[0].screenY;
-                      " @mouseup.passive="
-                        touchendX = $event.screenX;
-                        touchendY = $event.screenY;
-                        handleGesture();
-                      " @touchend.passive="
-                        touchendX = $event.changedTouches[0].screenX;
-                        touchendY = $event.changedTouches[0].screenY;
-                        handleGesture();
-                      ">
+                            touchstartY = $event.screenY;
+                            touchstartX = $event.screenX;
+                          " @touchstart.passive="
+                            touchstartX = $event.changedTouches[0].screenX;
+                            touchstartY = $event.changedTouches[0].screenY;
+                          " @mouseup.passive="
+                            touchendX = $event.screenX;
+                            touchendY = $event.screenY;
+                            handleGesture();
+                          " @touchend.passive="
+                            touchendX = $event.changedTouches[0].screenX;
+                            touchendY = $event.changedTouches[0].screenY;
+                            handleGesture();
+                          ">
               <!-- SLIDES -->
               <div data-id="1" class="flex popularSlider transition-all duration-300 select-none py-3"
                 x-ref="sliderContainer">
@@ -3914,21 +3370,21 @@
                 <template x-for="i in numberOfBullets">
                   <span class="w-[12px] h-[12px] rounded-full bg-white border border-[#016450] cursor-pointer"
                     :id="$id('b')" @click="
-                              $refs.sliderContainer.style.transform = `translateX(-${(Array.from($el.parentElement.children).indexOf($el) - 1) * 100}%)`
-                              $refs.sliderContainer.dataset.id = +$el.id.substr(2);
-                              currentSlide = $refs.sliderContainer.dataset.id - 1;
-                              Array.from($el.parentElement.children).forEach(el => {
-                                el.classList.remove('bg-[#b39359]');
-                                el.classList.remove('border-transparent');
-                                el.classList.add('bg-white');
-                                el.classList.add('border-[#016450]');
-                              })
-                              
-                              $el.classList.remove('bg-white');
-                              $el.classList.remove('border-[#016450]');
-                              $el.classList.add('bg-[#b39359]');
-                              $el.classList.add('border-transparent');
-                            ">
+                                  $refs.sliderContainer.style.transform = `translateX(-${(Array.from($el.parentElement.children).indexOf($el) - 1) * 100}%)`
+                                  $refs.sliderContainer.dataset.id = +$el.id.substr(2);
+                                  currentSlide = $refs.sliderContainer.dataset.id - 1;
+                                  Array.from($el.parentElement.children).forEach(el => {
+                                    el.classList.remove('bg-[#b39359]');
+                                    el.classList.remove('border-transparent');
+                                    el.classList.add('bg-white');
+                                    el.classList.add('border-[#016450]');
+                                  })
+                                  
+                                  $el.classList.remove('bg-white');
+                                  $el.classList.remove('border-[#016450]');
+                                  $el.classList.add('bg-[#b39359]');
+                                  $el.classList.add('border-transparent');
+                                ">
                   </span>
                 </template>
               </div>
@@ -3938,19 +3394,448 @@
       </div>
     </section>
     <!-- POPULAR PROPERTIES SECTION END -->
+    <!-- ABOUT US SECTION START -->
+    <section class="lg:pt-[55px]" x-data="{
+            valueY: 0,
+            valueX: 0,
+            handleGesture: function(){
+              $refs.imageAbout.style.transform = `translate(${-this.valueX * 0.016}px, ${-this.valueY * 0.016}px)`
+            }
+          }" @mousemove="
+            valueY = $event.clientY;
+            valueX = $event.clientX;
+            handleGesture()
+          ">
+      <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
+        <div class="grid grid-cols-12 gap-6 items-center">
+          <!-- SECTION HEADING -->
+          <div class="col-span-12 lg:col-span-6">
+            <span class="text-[#b39359] text-[16px] inline-block mb-2">Why Choose us</span>
+            <h2
+              class="font-['Lora'] text-[#0b2c3d] text-[24px] sm:text-[30px] leading-[1.277] xl:text-[36px] capitalize mb-5 lg:mb-16 font-medium max-w-[500px]">
+              We Provide Latest Properties for our valuable Clients.<span class="text-[#b39359]">.</span>
+            </h2>
+            <div>
+              <img src="images/about.webp" x-ref="imageAbout" class="transition-all duration-75" loading="lazy"
+                width="729" height="663" alt="about Image" />
+            </div>
+          </div>
+          <!-- SECTION CONTENT LIST -->
+          <div class="col-span-12 lg:col-span-6 lg:pl-[70px]">
+            <p class="max-w-[448px]">
+              Huge number of propreties availabe here for buy, sell and Rent.
+              Also you find here co-living property so lots opportunity you
+              have to choose here and enjoy huge discount.
+            </p>
+
+            <div class="-mb-10 mt-12 xl:mt-[70px] 2xl:mt-[100px]">
+              <div class="flex flex-wrap mb-5 lg:mb-10">
+                <img src="images/doller.webp" class="self-start mr-5" loading="lazy" width="50" height="50"
+                  alt="about Image" />
+                <div class="flex-1">
+                  <h3 class="font-['Lora'] text-[#0b2c3d] text-[22px] xl:text-[28px] capitalize mb-2">
+                    Budget Friendly
+                  </h3>
+                  <p class="max-w-[315px]">
+                    Properties are most budget friendly so you have
+                    opportunity to find the best one
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-wrap mb-5 lg:mb-10">
+                <img src="images/location.webp" class="self-start mr-5" loading="lazy" width="50" height="50"
+                  alt="about Image" />
+                <div class="flex-1">
+                  <h3 class="font-['Lora'] text-[#0b2c3d] text-[22px] xl:text-[28px] capitalize mb-2">
+                    Prime Location
+                  </h3>
+                  <p class="max-w-[315px]">
+                    Properties are most budget friendly so you have
+                    opportunity to find the best one
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-wrap mb-5 lg:mb-10">
+                <img src="images/trusted.webp" class="self-start mr-5" loading="lazy" width="50" height="50"
+                  alt="about Image" />
+                <div class="flex-1">
+                  <h3 class="font-['Lora'] text-[#0b2c3d] text-[22px] xl:text-[28px] capitalize mb-2">
+                    Trusted by Thousand
+                  </h3>
+                  <p class="max-w-[315px]">
+                    Properties are most budget friendly so you have
+                    opportunity to find the best one
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT US SECTION END -->
+    <!-- EXPLORE CITIES SECTION START -->
+    <section class="pt-[80px] pb-[120px] lg:py-[120px]">
+      <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
+        <!-- SECTION HEADING -->
+        <div class="mb-[30px] lg:mb-[60px] text-center">
+          <span class="text-[#b39359] text-[16px] inline-block mb-2">Explore Cities</span>
+          <h2 class="font-['Lora'] text-[#0b2c3d] text-[24px] sm:text-[30px] xl:text-[36px] capitalize font-medium">
+            Find Your Neighborhood
+            <span class="text-[#b39359]">.</span>
+          </h2>
+        </div>
+        <!-- EXPLORE CITIES SLIDER CONTAINER -->
+        <div class="-my-[60px] py-[60px]">
+          <!-- SLIDER'S WRAPPER -->
+          <!-- SECTION CONTENT -->
+          <div class="overflow-hidden max-w-[1200px] mx-auto" x-data="{
+                          init(){
+                                   this.width <= 768 ? this.numberOfSlides = 1 :
+                                   this.width > 768 && this.width <= 1024 ? this.numberOfSlides = 2 :
+                                   this.numberOfSlides = 4;
+                                   this.numberOfBullets = Math.ceil(this.numberOfitems / this.numberOfSlides);
+                                  
+                                   $nextTick(() => {
+                                   Array.from($refs.pagination.children)[1].classList.add('bg-[#b39359]');
+                                   Array.from($refs.pagination.children)[1].classList.add('border-transparent');
+                                   Array.from($refs.pagination.children)[1].classList.remove('bg-white');
+                                   Array.from($refs.pagination.children)[1].classList.remove('border-[#016450]');
+                                  });
+                              },
+                          numberOfBullets: '',
+                          numberOfitems: Array.from(document.querySelector('.slider').children).length,
+                          width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                          numberOfSlides: '',
+                          touchstartX: 0,
+                          touchstartY: 0,
+                          touchendX: 0,
+                          touchendY: 0,
+                          currentSlide: 0,
+                          swipperPaginationClass: function () {
+                            Array.from($refs.pagination.children).forEach(el => {
+                                    el.classList.remove('bg-[#b39359]');
+                                    el.classList.remove('border-transparent');
+                                    el.classList.add('bg-white');
+                                    el.classList.add('border-[#016450]');
+                                    if (el.id.substr(2) === $refs.sliderContainer.dataset.id) {
+                                      el.classList.add('bg-[#b39359]');
+                                      el.classList.add('border-transparent');
+                                      el.classList.remove('bg-white');
+                                      el.classList.remove('border-[#016450]');
+                                    }
+                              });
+                          },
+                          handleGesture: function(){
+                            if (this.touchendX < this.touchstartX) {
+                              if(this.currentSlide === this.numberOfBullets - 1) this.currentSlide = -1;
+                              this.currentSlide++;
+                              $refs.sliderContainer.dataset.id = this.currentSlide + 1;
+                              $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
+                              this.swipperPaginationClass();
+                            }
+                            if (this.touchendX > this.touchstartX) {
+                              if(this.currentSlide === 0) this.currentSlide = this.numberOfBullets;
+                              $refs.sliderContainer.dataset.id = this.currentSlide;
+                              this.currentSlide--;
+                              $refs.sliderContainer.style.transform = `translateX(-${(this.currentSlide) * 100}%)`
+                              this.swipperPaginationClass();
+                            }
+                          }    
+                        }">
+            <!-- SLIDES PARENT CONTAINER -->
+            <div @mousedown.passive="
+                            touchstartY = $event.screenY;
+                            touchstartX = $event.screenX;
+                          " @touchstart.passive="
+                            touchstartX = $event.changedTouches[0].screenX;
+                            touchstartY = $event.changedTouches[0].screenY;
+                          " @mouseup.passive="
+                            touchendX = $event.screenX;
+                            touchendY = $event.screenY;
+                            handleGesture();
+                          " @touchend.passive="
+                            touchendX = $event.changedTouches[0].screenX;
+                            touchendY = $event.changedTouches[0].screenY;
+                            handleGesture();
+                          ">
+              <!-- SLIDES -->
+              <div data-id="1" class="flex slider transition-all duration-300 select-none" x-ref="sliderContainer">
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image1.webp" alt="Slide 1" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">New
+                          York</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          36 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image2.webp" alt="Slide 2" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">
+                          Sun Francisco
+                        </span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          16 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image3.webp" alt="Slide 3" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Washington
+                          D.C.</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          26 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          36 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image1.webp" alt="Slide 1" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">New
+                          York</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          36 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image2.webp" alt="Slide 2" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">
+                          Sun Francisco
+                        </span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          16 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image3.webp" alt="Slide 3" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Washington
+                          D.C.</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          26 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          36 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          36 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image1.webp" alt="Slide 1" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">New
+                          York</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          36 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image2.webp" alt="Slide 2" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">
+                          Sun Francisco
+                        </span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          16 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image3.webp" alt="Slide 3" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Washington
+                          D.C.</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          26 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <!-- SLIDE -->
+                <div class="w-full h-auto px-4 mb-8 md:w-1/2 lg:w-1/4 shrink-0">
+                  <article class="relative group cursor-pointer">
+                    <a href="#"
+                      class="block group-hover:shadow-[0_10px_15px_0px_rgba(0,0,0,0.1)] transition-all duration-300 pointer-events-none">
+                      <img src="images/image4.webp" alt="Slide 4" class="w-full h-full block mx-auto rounded-[6px]" />
+                      <div
+                        class="bg-[rgb(255,253,252,0.9)] rounded-[6px] px-[5px] py-[15px] absolute group-hover:bottom-[25px] group-hover:opacity-100 bottom-[0px] opacity-0 left-[25px] right-[25px] transition-all duration-500 text-center">
+                        <span
+                          class="font-['Lora'] font-normal text-[18px] text-[#0b2c3d] transition-all leading-none">Francisco</span>
+                        <p class="font-light text-[14px] capitalize text-[#b39359] transition-all leading-none">
+                          36 Properties
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- SLIDE'S PAGINATION -->
+            <div class="flex justify-center items-center">
+              <div class="flex gap-x-2" x-ref="pagination">
+                <template x-for="i in numberOfBullets">
+                  <span class="w-[12px] h-[12px] rounded-full bg-white border border-[#016450] cursor-pointer"
+                    :id="$id('a')" @click="
+                                  $refs.sliderContainer.style.transform = `translateX(-${(Array.from($el.parentElement.children).indexOf($el) - 1) * 100}%)`
+                                  $refs.sliderContainer.dataset.id = +$el.id.substr(2);
+                                  currentSlide = $refs.sliderContainer.dataset.id - 1;
+                                  Array.from($el.parentElement.children).forEach(el => {
+                                    el.classList.remove('bg-[#b39359]');
+                                    el.classList.remove('border-transparent');
+                                    el.classList.add('bg-white');
+                                    el.classList.add('border-[#016450]');
+                                  })
+                                  
+                                  $el.classList.remove('bg-white');
+                                  $el.classList.remove('border-[#016450]');
+                                  $el.classList.add('bg-[#b39359]');
+                                  $el.classList.add('border-transparent');
+                                ">
+                  </span>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EXPLORE CITIES SECTION END -->
     <!-- VIDEO SECTION START -->
     <section class="mt-12">
       <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
         <div class="relative flex items-center flex-col-reverse lg:flex-row justify-between max-w-[1200px] mx-auto"
           x-data="{
-            isShowCaseOpen: false,
-            showBodyOverflow(){
-              document.querySelector('body').style.overflow = 'visible'
-            },
-            hideBodyOverflow(){
-              document.querySelector('body').style.overflow = 'hidden'
-            }
-          }">
+                isShowCaseOpen: false,
+                showBodyOverflow(){
+                  document.querySelector('body').style.overflow = 'visible'
+                },
+                hideBodyOverflow(){
+                  document.querySelector('body').style.overflow = 'hidden'
+                }
+              }">
           <!-- VIDEO BOX -->
           <div class="lg:max-w-[737px] max-w-full w-full">
             <div class="rounded-[24px] z-[1] relative">
@@ -3960,9 +3845,9 @@
                   width="507" height="349" alt="video image" />
               </div>
               <a @click.prevent="
-                isShowCaseOpen = true;
-                hideBodyOverflow();
-              " href="#"
+                    isShowCaseOpen = true;
+                    hideBodyOverflow();
+                  " href="#"
                 class="bg-white text-white hover:text-[#0b2c3d] absolute left-0 right-0 mx-auto top-1/2 -translate-y-1/2 hover:scale-105 hover:bg-[#0b2c3d] w-[70px] h-[70px] md:w-[90px] md:h-[90px] flex flex-wrap z-[5] items-center justify-center opacity-100 shadow-[0px 4px 4px rgba(0, 0, 0, 0.25)] transition-all rounded-full group before:block before:absolute before:bg-white before:opacity-80 before:shadow-[0px 4px 4px rgba(0, 0, 0, 0.25)] hover:before:bg-[#0b2c3d] hover:before:opacity-80 md:before:w-[110px] md:before:h-[110px] before:w-[90px] before:h-[90px] before:rounded-full before:z-[-5]"
                 aria-label="play button">
                 <svg width="31" height="32" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4002,18 +3887,18 @@
           <div
             class="fixed inset-0 bg-black/70 w-full h-full z-50 px-2 py-10 text-center flex items-center justify-center"
             x-show="isShowCaseOpen" @keyup.escape.window="
-                isShowCaseOpen = false;
-                showBodyOverflow();
-              " @click.self="
-                isShowCaseOpen = false;
-                showBodyOverflow();
-          ">
+                    isShowCaseOpen = false;
+                    showBodyOverflow();
+                  " @click.self="
+                    isShowCaseOpen = false;
+                    showBodyOverflow();
+              ">
             <div class="container max-w-4xl mx-auto px-6 py-4">
               <div class="text-white flex justify-end mb-6">
                 <svg @click="
-                    isShowCaseOpen = false;
-                    showBodyOverflow();
-                  " class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.12 27.12">
+                        isShowCaseOpen = false;
+                        showBodyOverflow();
+                      " class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.12 27.12">
                   <title>Asset 9</title>
                   <g id="Layer_2" data-name="Layer 2">
                     <g id="Layer_1-2" data-name="Layer 1">
@@ -4335,6 +4220,121 @@
       </div>
     </section>
     <!-- FEATURED PROPERTIES SECTION END -->
+    <!-- RELIABLE PARTNERS SECTION START -->
+    <section class="pb-[80px] lg:pb-[120px]">
+      <div class="container mx-auto px-5 font-['Karla'] text-[#494949]">
+        <!-- SECTION TITLE -->
+        <div class="mb-[60px] text-start">
+          <span class="text-[#b39359] text-[16px] inline-block mb-2">Our Partner’s</span>
+          <h2 class="font-['Lora'] text-[#0b2c3d] text-[24px] sm:text-[30px] xl:text-[36px] capitalize font-medium">
+            Reliable Partner’s<span class="text-[#b39359]">.</span>
+          </h2>
+        </div>
+        <!-- PARTNERS SLIDER CONTAINER -->
+        <div class="max-w-[1200px] mx-auto" x-data="{
+                  isDown : false,
+                  startX: '',
+                  scrollLeft: '',
+                  x: '',
+                  dist: '',
+                  slider: document.querySelector('.items'),
+                }">
+          <!-- SLIDER WRAPPER -->
+          <ul class="relative w-full flex cursor-pointer items overflow-hidden" @mousedown.passive="
+                    isDown = true;
+                    startX = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
+                    scrollLeft = slider.scrollLeft;
+                  " @touchstart.passive="
+                    isDown = true;
+                    startX = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
+                    scrollLeft = slider.scrollLeft;	
+                  " @mousemove.prevent="
+                    if(!isDown) return;
+                    x = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
+                    dist = (x - startX);
+                    slider.scrollLeft = scrollLeft - dist;
+                  " @touchmove.prevent="
+                    if(!isDown) return;
+                    x = $event.pageX || $event.touches[0].pageX - slider.offsetLeft;
+                    dist = (x - startX);
+                    slider.scrollLeft = scrollLeft - dist;
+                  " @mouseleave.passive="isDown = false" @mouseup.passive="isDown = false"
+            @touchend.passive="isDown = false">
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand1.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 1" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand2.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 2" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand3.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 3" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand4.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 4" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand5.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 5" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand1.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 1" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand2.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 2" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand3.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 3" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand4.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 4" />
+              </a>
+            </li>
+            <!-- SLIDE -->
+            <li class="w-[210px] mr-[30px] text-center shrink-0">
+              <a href="#" class="block pointer-events-none">
+                <img src="images/brand5.webp" class="w-auto h-auto block mx-auto" loading="lazy" width="125"
+                  height="109" alt="Brand 5" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- RELIABLE PARTNERS SECTION END -->
     <!-- TESTIMONIALS SECTION START -->
     <section class="pb-[80px] lg:pb-[120px] bg-center bg-no-repeat bg-white relative z-10" x-data="{
         valueY: 0,
