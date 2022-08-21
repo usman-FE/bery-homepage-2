@@ -768,6 +768,10 @@ video {
   z-index: 9999;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -2291,6 +2295,11 @@ video {
 .before\:z-\[-5\]::before {
   content: var(--tw-content);
   z-index: -5;
+}
+
+.before\:z-\[1\]::before {
+  content: var(--tw-content);
+  z-index: 1;
 }
 
 .before\:block::before {
